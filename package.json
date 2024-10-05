@@ -1,7 +1,7 @@
 {
   "name": "algorithm-ts",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^22.7.4",
