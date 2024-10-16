@@ -2,6 +2,9 @@
 //   /* */
 // }
 
+import combination from "./algorithm/combination";
+import permutation from "./algorithm/permutation";
+
 // const rl = require("readline").createInterface({
 //   input: process.stdin,
 //   output: process.stdout,
@@ -16,4 +19,6 @@
 //   process.exit();
 // });
 
-console.log("hello!");
+const arr = ["a", "b", "c"];
+
+console.log(permutation(arr, 2, true));
