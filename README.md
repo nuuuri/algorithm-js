@@ -1,4 +1,4 @@
-# 알고리즘 문제풀이 with TypeScript
+# 알고리즘 문제풀이 with JavaScript/TypeScript
 
 ### 1. 패키지 설치
 
