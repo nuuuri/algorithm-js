@@ -1,10 +1,3 @@
-// function solution() {
-//   /* */
-// }
-
-import combination from "./algorithm/combination";
-import permutation from "./algorithm/permutation";
-
 // const rl = require("readline").createInterface({
 //   input: process.stdin,
 //   output: process.stdout,
@@ -18,7 +11,3 @@ import permutation from "./algorithm/permutation";
 //   solution();
 //   process.exit();
 // });
-
-const arr = ["a", "b", "c"];
-
-console.log(permutation(arr, 2, true));
