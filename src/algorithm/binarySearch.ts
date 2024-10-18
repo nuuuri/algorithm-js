@@ -19,3 +19,23 @@ export function binarySearchIterative(list: number[], target: number) {
 
   return -1; // target을 찾지 못함
 }
+
+// 재귀 사용
+export function binarySearchRecursive(
+  list: number[],
+  target: number,
+  leftIndex: number = 0,
+  rightIndex: number = list.length - 1
+) {
+  if (leftIndex > rightIndex) return -1;
+
+  const midIndex = Math.floor((leftIndex + rightIndex) / 2);
+
+  if (list[midIndex] === target) {
+    return midIndex;
+  } else if (list[midIndex] < target) {
+    return binarySearchRecursive(list, target, midIndex + 1, rightIndex);
+  } else {
+    return binarySearchRecursive(list, target, leftIndex, midIndex - 1);
+  }
+}
