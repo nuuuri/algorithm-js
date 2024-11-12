@@ -20,16 +20,15 @@ export default function kruskal(
   };
 
   edges.forEach((edge) => {
-    // from과 to의 root가 다를 경우
     const rootFrom = findRoot(edge.from);
     const rootTo = findRoot(edge.to);
 
+    // from과 to의 root가 다를 경우 추가
+    // 같은 경우 사이클이 생김
     if (rootFrom !== rootTo) {
-      root[rootTo] = rootFrom;
+      root[rootTo] = rootFrom; // 하나의 그룹으로 합침
       totalCost += edge.cost;
     }
-
-    console.log(root);
   });
 
   return totalCost;
