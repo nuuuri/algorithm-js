@@ -4,10 +4,10 @@
 // });
 
 // rl.on("line", function (line: string) {
-//   /* 입력 값 처리 부분 */
-
-//   rl.close(); // 입력 종료
+//   rl.close();
 // }).on("close", function () {
 //   solution();
 //   process.exit();
 // });
+
+// function solution() {}
